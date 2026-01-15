@@ -1,0 +1,193 @@
+body{
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: rgb(135, 209, 23);
+}
+.head{
+          display: flex;
+          flex-direction: column;
+         margin: 10% auto;
+          align-items: center;
+}
+.head-icon{
+         display: none;
+
+}
+form{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+}
+input{
+          border: none;
+          border-radius: 10px;
+          height: 7vh;
+          width: 100%;
+}
+input:hover{
+  background-color: gray;
+  color: white;
+}
+
+input::placeholder{
+  color: rgb(31, 168, 13);
+          padding: 10px;
+}
+.username{
+          position: relative;
+          width: 300px;
+}
+.username i{
+         position: absolute;
+         font-size: 20px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(93, 87, 87);
+  pointer-events: none; 
+}
+.password{
+          position: relative;
+          width: 300px;
+}
+.email{
+          position: relative;
+          width: 300px;
+}
+.password i{
+         position: absolute;
+         font-size: 20px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(93, 87, 87);
+  pointer-events: none; 
+}
+.email i{
+         position: absolute;
+         font-size: 20px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(93, 87, 87);
+  pointer-events: none; 
+}
+button{
+          width: 150px;
+          border: none;
+          border-radius: 10px;
+          padding: 10px;
+         margin: auto 85px;
+         transition: transform 0.25s ease;
+         background-color: rgb(221, 221,138);
+
+}
+button:hover{
+          background-color: rgb(185, 185, 138);
+            transform: translate(5px -10%);
+}
+hr{
+   border: 1px solid black;
+}
+.fot{
+  text-align: center;
+  font-size:16px;
+  margin: 0;
+  padding: 0;
+}
+.fot a{
+  color: firebrick;
+}
+.fot a:hover{
+  color: sienna;
+}
+.fot a::after{
+  color: rgb(225, 225, 29);
+}
+@media screen and (max-width:768px){
+  body{
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: rgb(135, 209, 23);
+          overflow: hidden;
+}
+  .head-icon{
+         display: flex;
+         justify-content: space-between;
+         padding: 20px  ;
+
+}
+form{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding-left: 40px;
+      
+         
+}
+input{
+          border: none;
+          border-radius: 10px;
+          height: 7vh;
+          width: 90%;
+}
+hr{
+   border: 1px solid black;
+   width: 90%;
+   padding-right: 20px;
+}
+.username{
+          position: relative;
+          width: 300px;
+}
+.username i{
+         position: absolute;
+         font-size: 40px;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(93, 87, 87);
+  pointer-events: none; 
+}
+.password{
+          position: relative;
+          width: 300px;
+}
+.email{
+          position: relative;
+          width: 300px;
+}
+.password i{
+         position: absolute;
+         font-size: 40px;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(93, 87, 87);
+  pointer-events: none; 
+}
+.email i{
+         position: absolute;
+         font-size: 40px;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(93, 87, 87);
+  pointer-events: none; 
+}
+.fot{
+  text-align: center;
+  font-size:13px;
+  
+}
+.fot a{
+  color:purple;
+  font-size: 20px;
+  text-decoration: none;
+}
+.fot a:hover{
+  color: red;
+}
+}

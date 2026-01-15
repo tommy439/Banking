@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="styl.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+          <title>login page</title>
+</head>
+<body>
+          <main>
+                    <div class="head">
+                              <p>Log in</p>
+                              <hr>
+                              <div>
+                                        <div class="head-icon">
+                                                <i class="bi bi-fingerprint"></i>
+                                        </div>
+                                        <div>
+                                                  <p>login With Your Touch ID</p>
+                                                  <p>Use your touch id so you can have access to your account?
+                                                  </p>
+                                        </div>
+                              </div>
+                    </div>
+                    <footer>
+                              <!-- <button type="Login with Email"><a href="">Login with Email</a></button> -->
+                               <!-- Login with Email Button -->
+<button id="openModal" class="login-btn">Login with Email</button>
+
+<!-- Modal Background -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h2>Email Login</h2>
+
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Password" />
+
+    <div class="modal-actions">
+      <button class="login"><a href="ind.html">login</a></button>
+      <button id="closeModal" class="cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
+                    </footer>
+          </main>
+          <script>
+  const modal = document.getElementById("modal");
+  const openBtn = document.getElementById("openModal");
+  const closeBtn = document.getElementById("closeModal");
+
+  openBtn.onclick = () => {
+    modal.style.display = "flex";
+  };
+
+  closeBtn.onclick = () => {
+    modal.style.display = "none";
+  };
+</script>
+</body>
+</html>
