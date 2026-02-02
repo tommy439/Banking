@@ -6,10 +6,22 @@ body{
 }
 .head-acc{
           text-align: center;
+            background-color: white;
+          height: 20vh;
+
 }
 hr{
           width: 50%;
           border: 1px solid black;
+}
+.icon {
+   color: black;
+   position: absolute;
+   top: 30px;
+   left: 20px;
+   font-size: 30px;
+   
+
 }
 .box{
           display: flex;
@@ -17,7 +29,7 @@ hr{
            background-color: rgb(119, 186, 23);
           align-items: center;
           flex-direction: column;
-          height: 85vh;
+          height: 59vh;
           padding: 5% 0px;
           border-top-left-radius:20px ;
           border-top-right-radius: 20px;
